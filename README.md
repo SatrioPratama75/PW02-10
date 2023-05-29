@@ -126,7 +126,7 @@ mencapai lebih dari 2000 tahun.', 'artikel-kedua');
 
 - Refresh kembali browser, sehingga akan ditampilkan hasilnya.
 
-![Tampilan Artikel]![studi_kasus](https://github.com/SatrioPratama75/PW02-10/assets/92651803/282794a5-2259-4f23-a06a-48815e854a29)
+![Tampilan Artikel]![studi_kasus]![tampilan_artikel](https://github.com/SatrioPratama75/PW02-10/assets/92651803/e1107620-019c-4ace-9aba-95c09b85fcdc)
 
 
 # Membuat Tampilan Detail Artikel
@@ -175,7 +175,8 @@ return view('artikel/detail', compact('artikel', 'title'));
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
 ```
 
-![Detail Artikel](img/detail_artikel.png)
+![Detail Artikel]![detail_artikel](https://github.com/SatrioPratama75/PW02-10/assets/92651803/8f19fce4-6939-4a7b-93b2-4c4ef1e1de7e)
+
 
 # Membuat Menu Admin
 - Menu Admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller Artikel dengan
@@ -252,7 +253,7 @@ $routes->group('admin', function($routes) {
 
 - Akses menu admin dengan url http://localhost:8080/admin/artikel
 
-![Admin Index](img/admin_index.png)
+![Admin Index]![admin_index](https://github.com/SatrioPratama75/PW02-10/assets/92651803/fe6809c2-095e-4bc0-9443-896a73c209ed)
 
 # Menambah Data Artikel
 - Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
@@ -302,7 +303,8 @@ return view('artikel/form_add', compact('title'));
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![Tambah Artikel](img/tambah_artikel.png)
+![Tambah Artikel]![tambah_artikel](https://github.com/SatrioPratama75/PW02-10/assets/92651803/12aa4ded-c6b7-475e-9492-a81042b8be67)
+
 
 # Mengubah Data
 - Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
@@ -348,7 +350,7 @@ $data['isi'];?></textarea>
 <?= $this->include('template/admin_footer'); ?>
 ```
 
-![Edit Artikel](img/edit_artikel.png)
+![Edit Artikel]![edit_artikel](https://github.com/SatrioPratama75/PW02-10/assets/92651803/ad4b45c8-9408-46b7-9300-ba5cffc302d8)
 
 # Menghapus Data
 <p>Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().</p>
